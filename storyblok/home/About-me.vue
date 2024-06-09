@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-14 font-mono font-normal">
+  <div class="container mx-auto px-4 py-6 lg:py-14 font-mono font-normal">
 
     <div class="grid lg:grid-cols-2 gap-4 lg:mt-8">
       <h2 v-editable="blok" class="w-3/4 text-5xl">

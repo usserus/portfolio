@@ -43,16 +43,17 @@ defineProps({
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
+  background-color: white;
   transform: translateY(100%);
   transition: transform 1s;
 }
 
 .overlay::before {
   content: "show project";
+  white-space: nowrap;
   position: absolute;
-  left: 50%;
-  @apply font-mono font-normal uppercase text-xs mt-2 text-white;
+  right: 0;
+  @apply font-mono font-light uppercase text-xs mt-2 text-black;
 }
 
 .animation:hover .overlay {

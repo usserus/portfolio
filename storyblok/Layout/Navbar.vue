@@ -27,7 +27,7 @@ if (route.path === '/') {
   link.value = '#';
   classes.value = 'fixed top-0 left-0 right-0 z-10 py-3 px-4 font-mono font-light bg-white';
 } else {
-  linkText.value = '< Zurück';
+  linkText.value = '< back';
   link.value = '/';
   classes.value = 'fixed top-0 left-0 right-0 z-10 py-3 px-4 font-mono font-light bg-black';
 }
