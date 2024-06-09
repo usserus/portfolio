@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mb-14 font-mono font-normal uppercase">
+  <div class="container mx-auto px-4 mb-14 font-mono font-normal uppercase">
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 mb-8">
 

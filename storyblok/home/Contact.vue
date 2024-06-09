@@ -6,7 +6,7 @@
     <h1>{{ blok.heading }}</h1>
   </div>
 
-  <div class="container mx-auto mt-20 font-mono font-light">
+  <div class="container mx-auto px-4 mt-20 font-mono font-light">
 
     <div class="grid lg:grid-cols-2 gap-4 mt-8">
 
