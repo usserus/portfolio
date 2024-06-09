@@ -1,7 +1,7 @@
 <template>
   <div v-editable="blok">
 
-    <a :href="blok.link && blok.link.story ? blok.link.story.url: '#'">
+    <a :href="blok.link && blok.link.story ? blok.link.story.url: '#'" class="group font-mono font-light uppercase">
 
       <div class="animation" @mouseover="startAnimation" @mouseleave="resetAnimation">
         <img :src="blok.image.filename" :alt="blok.image.alt">
@@ -10,11 +10,11 @@
 
       <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
 
-      <div class="text-xs font-mono font-light uppercase mt-1">
+      <div class="text-xs mt-1">
         {{ blok.subheading }}
       </div>
 
-      <div class="text-xl font-mono font-light uppercase">
+      <div class="text-xl">
         {{ blok.heading }}
       </div>
 
@@ -27,7 +27,6 @@
 defineProps({
   blok: Object
 });
-
 
 </script>
 
@@ -45,8 +44,8 @@ defineProps({
   width: 100%;
   height: 100%;
   background-color: black;
-  transform: translateY(100%); /* Startposition unten */
-  transition: transform 1s; /* Übergangseigenschaft */
+  transform: translateY(100%);
+  transition: transform 1s;
 }
 
 .overlay::before {
@@ -57,7 +56,7 @@ defineProps({
 }
 
 .animation:hover .overlay {
-  transform: translateY(90%); /* Endposition oben (50% des Bildes) */
+  transform: translateY(90%);
 }
 
 </style>

@@ -12,19 +12,6 @@
 let {slug} = useRoute().params;
 
 
-import {onBeforeMount} from 'vue';
-import {useRoute} from 'vue-router';
-
-const route = useRoute();
-
-onBeforeMount(() => {
-  const slug = route.params.slug;
-  if (slug && slug.includes('projects')) {
-    document.body.classList.add('fade-background');
-  }
-});
-
-
 // Render "home" story on root url (/)
 if (slug === "") {
   slug = [`home`];
@@ -47,17 +34,3 @@ try {
 }
 
 </script>
-
-
-<style>
-.fade-background {
-  background-color: black;
-  color: #e5ded5;
-  transition: background-color 2s ease
-}
-
-* {
-  scroll-behavior: smooth;
-}
-
-</style>

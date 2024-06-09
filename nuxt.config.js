@@ -17,5 +17,10 @@ export default defineNuxtConfig({
         server: {
             hmr: false
         }
+    },
+    head: {
+        link: [
+            {rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon.ico'},
+        ],
     }
 })

@@ -1,12 +1,19 @@
 
-# Storyblok quick starter project
+# Storyblok portfolio project
 
-Welcome to this sample project for Nuxt!
-This project serves as a quick starter for integrating Storyblok, a headless CMS, into your web development projects.
+Welcome to my potfolio project!
+This project was created as part of the headless web development elective.
 
-For starting, you can access to the `kwm` folder.
-In the folder you have some files like:
+## Vercel
 
-- `nuxt.config.js`: the configuration with Storyblok API;
-- `pages/index.vue`: the initialization of the Storyblok Bridge.
+This project is currently hosted on vercel. You can access the project under the following link:
+```
+https://portfolio-two-zeta-29.vercel.app/
+```
 
+## Github
+
+You can currently find the project on the following github repository:
+```
+https://github.com/usserus/portfolio
+```

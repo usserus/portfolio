@@ -1,9 +1,8 @@
 <template>
-
-  <div class="container mx-auto mt-20">
+  <div class="container mx-auto py-14 font-mono font-normal">
 
     <div class="grid lg:grid-cols-2 gap-4 lg:mt-8">
-      <h2 v-editable="blok" class="w-3/4 text-5xl font-mono font-normal">
+      <h2 v-editable="blok" class="w-3/4 text-5xl">
         {{ blok.heading }}
       </h2>
 
@@ -13,8 +12,6 @@
     </div>
 
   </div>
-
-
 </template>
 
 <script setup>
