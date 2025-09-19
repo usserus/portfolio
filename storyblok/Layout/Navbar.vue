@@ -13,8 +13,8 @@
 
 <script setup lang="ts">
 
-import {ref} from 'vue';
-import {useRoute, RouteLocationNormalizedLoaded} from 'vue-router';
+import { ref } from 'vue';
+import { useRoute, RouteLocationNormalizedLoaded } from 'vue-router';
 
 const route: RouteLocationNormalizedLoaded = useRoute();
 

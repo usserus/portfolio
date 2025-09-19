@@ -16,5 +16,8 @@
     "@storyblok/nuxt": "^6.0.4",
     "nuxt": "^3.11.2",
     "nuxt-icon": "^0.6.10"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0"
   }
 }
