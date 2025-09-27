@@ -5,7 +5,7 @@
     <a href="#">
       <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
       <div class="bg-white py-6">
-        <Icon name="tdesign:caret-up" color="black"/>
+        <Icon name="tdesign:caret-up" color="black" />
         <div class="text-xs text-black">Back to top</div>
       </div>
     </a>
