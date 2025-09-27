@@ -1,7 +1,8 @@
 <template>
   <div v-editable="blok">
 
-    <a :href="blok.link && blok.link.story ? blok.link.story.url: '#'" class="group font-mono font-light uppercase">
+    <NuxtLink :to="blok.link && blok.link.story ? blok.link.story.url : '#'"
+      class="group font-mono font-light uppercase">
 
       <div class="animation" @mouseover="startAnimation" @mouseleave="resetAnimation">
         <img :src="blok.image.filename" :alt="blok.image.alt">
@@ -18,7 +19,7 @@
         {{ blok.heading }}
       </div>
 
-    </a>
+    </NuxtLink>
   </div>
 </template>
 
@@ -31,7 +32,6 @@ defineProps({
 </script>
 
 <style scoped>
-
 .animation {
   position: relative;
   overflow: hidden;
@@ -59,5 +59,4 @@ defineProps({
 .animation:hover .overlay {
   transform: translateY(90%);
 }
-
 </style>
