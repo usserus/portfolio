@@ -6,7 +6,10 @@
 </template>
 
 <script setup>
-defineProps({ blok: Object });
+defineProps({
+  blok: Object,
+  storyName: String
+});
 
 import { onMounted, ref } from 'vue';
 import { useRoute } from 'vue-router';
