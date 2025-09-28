@@ -4,7 +4,7 @@
     <NuxtLink :to="blok.link && blok.link.story ? blok.link.story.url : '#'"
       class="group font-mono font-light uppercase">
 
-      <div class="animation" @mouseover="startAnimation" @mouseleave="resetAnimation">
+      <div class="animation">
         <img :src="blok.image.filename" :alt="blok.image.alt">
         <div class="overlay"></div>
       </div>
