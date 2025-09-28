@@ -9,7 +9,7 @@
         <div class="overlay"></div>
       </div>
 
-      <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700">
+      <hr class="h-px my-3 bg-gray-500 border-0">
 
       <div class="text-xs mt-1">
         {{ blok.subheading }}

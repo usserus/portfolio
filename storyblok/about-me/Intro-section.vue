@@ -1,7 +1,6 @@
 <template>
     <div class="container mx-auto px-4 py-6 font-mono font-normal">
-        <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700">
-
+        <hr class="h-px bg-gray-400 border-0">
         <div v-editable="blok" class="grid sm:grid-cols-3 gap-6 mt-10">
             <div>
                 <h2 class="text-5xl font-light">
