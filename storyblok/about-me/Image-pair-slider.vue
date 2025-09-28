@@ -1,5 +1,5 @@
 <template>
-    <div v-editable="blok" class="container mx-auto px-4 py-6 font-mono font-normal mt-0 sm:mt-6">
+    <div v-editable="blok" class="container mx-auto px-4 py-6 lg:py-20 font-mono font-normal mt-0 sm:mt-6">
         <div class="grid grid-cols-1 sm:grid-cols-5 items-end gap-0 sm:gap-4 md:gap-6">
 
             <!-- Linkes Bild/Slider -->
@@ -21,7 +21,7 @@
                         </swiper-slide>
                     </swiper-container>
                 </div>
-                <div class="text-3xl">{{ blok.title }}</div>
+                <div class="text-3xl uppercase">{{ blok.title }}</div>
             </div>
         </div>
     </div>
