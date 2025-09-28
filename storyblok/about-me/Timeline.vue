@@ -1,5 +1,5 @@
 <template>
-    <div :class="blok.use_secondary_bg ? 'bg-white text-black' : ''">
+    <div :id="id" :class="blok.use_secondary_bg ? 'bg-white text-black' : ''">
         <div class="container mx-auto px-4 py-6 lg:py-14 font-mono font-normal mt-6">
             <hr class="h-px border-0 bg-gray-400">
             <div class="lg:grid grid-cols-3 gap-6 mt-10">
@@ -17,5 +17,6 @@
 </template>
 
 <script setup>
-defineProps({ blok: Object })
+const props = defineProps({ blok: Object })
+const id = props.blok?.heading.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
 </script>
