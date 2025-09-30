@@ -14,6 +14,8 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@storyblok/nuxt": "^6.0.4",
+    "@vueuse/core": "^13.9.0",
+    "@vueuse/nuxt": "^13.9.0",
     "nuxt": "^3.11.2",
     "nuxt-icon": "^0.6.10",
     "nuxt-swiper": "^2.0.1"
