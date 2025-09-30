@@ -4,10 +4,8 @@
 
     <div class="grid lg:grid-cols-2">
 
-      <div v-editable="blok" class="bg-gray-900 px-6 lg:px-28 pt-4">
-        <div>
-          <img :src="blok.image.filename" :alt="blok.image.alt">
-        </div>
+      <div v-editable="blok" class="h-full">
+        <img :src="blok.image.filename" :alt="blok.image.alt" class="w-full h-full object-cover">
       </div>
 
       <div class="grid content-between px-6 py-10 lg:py-20 bg-black">
