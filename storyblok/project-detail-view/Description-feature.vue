@@ -6,17 +6,14 @@
       {{ blok.heading }}
     </div>
 
-    <div class="text-m mt-4">
-      {{ blok.description }}
-    </div>
+    <div v-html="articleContent" class="text-m mt-4"></div>
 
   </div>
 </template>
 
 <script setup>
-defineProps({
-  blok: Object
-});
+const props = defineProps({ blok: Object });
+const articleContent = computed(() => renderRichText(props.blok.description));
 </script>
 
 <style scoped>
