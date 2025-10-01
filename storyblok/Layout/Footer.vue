@@ -2,7 +2,7 @@
 
   <footer class="text-center font-mono font-light">
 
-    <a href="#">
+    <a @click="goBack()">
       <hr class="h-px bg-gray-500 border-0">
       <div class="bg-white py-6">
         <Icon name="tdesign:caret-up" color="black" />
@@ -17,3 +17,9 @@
   </footer>
 
 </template>
+
+<script setup lang="ts">
+const goBack = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
