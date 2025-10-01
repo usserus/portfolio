@@ -2,10 +2,11 @@
   <nav :class="classes">
     <div class="flex justify-between">
       <div>
-        <button v-if="route.path !== '/'" @click="goBack" class="text-sm px-8 py-2 hover:underline">
+        <NuxtLink v-if="route.path !== '/'" @click="goBack" class="text-sm px-8 py-2 hover:underline">
           &lt; back
-        </button>
-        <NuxtLink v-else to="#" class="text-sm px-8 py-2 hover:underline">EmilDueringer ©</NuxtLink>
+        </NuxtLink>
+        <NuxtLink v-else @click="scrollToTop()" class="text-sm px-8 py-2 cursor-pointer hover:underline">EmilDueringer ©
+        </NuxtLink>
       </div>
       <div v-if="route.path === '/'" class="uppercase">
         <NuxtLink to="#contact" class="text-sm px-8 py-2 hover:underline">Contact</NuxtLink>
@@ -25,6 +26,10 @@ const router = useRouter();
 
 const goBack = () => {
   router.back();
+}
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 const classes = computed(() =>
