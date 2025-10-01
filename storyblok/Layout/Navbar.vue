@@ -2,14 +2,15 @@
   <nav :class="classes">
     <div class="flex justify-between">
       <div>
-        <NuxtLink v-if="route.path !== '/'" @click="goBack" class="text-sm px-8 py-2 hover:underline">
+        <NuxtLink v-if="route.path !== '/'" @click="goBack" class="text-sm px-8 py-2 cursor-pointer hover:underline">
           &lt; back
         </NuxtLink>
         <NuxtLink v-else @click="scrollToTop()" class="text-sm px-8 py-2 cursor-pointer hover:underline">EmilDueringer ©
         </NuxtLink>
       </div>
       <div v-if="route.path === '/'" class="uppercase">
-        <NuxtLink to="#contact" class="text-sm px-8 py-2 hover:underline">Contact</NuxtLink>
+        <NuxtLink to="/about-me" class="text-sm cursor-pointer hover:underline">About me</NuxtLink>
+        <NuxtLink to="#contact" class="text-sm px-8 py-2 cursor-pointer hover:underline">Contact</NuxtLink>
       </div>
     </div>
   </nav>
