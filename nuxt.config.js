@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-  css: ["@/assets/css/roboto.css"],
+  css: ["@/assets/css/roboto.css", "@/assets/css/tailwind.css"],
   modules: [
     [
       "@storyblok/nuxt",
