@@ -1,5 +1,5 @@
 <template>
-    <div v-editable="blok" class="container mx-auto w-4/5 lg:w-3/5 py-14">
+    <div v-editable="blok" class="container mx-auto px-4 w-4/5 lg:w-3/5 py-14">
         <div>
             <swiper-container ref="swiperOptions" :init="false" class="w-full my-swiper">
                 <swiper-slide v-for="(slide, idx) in blok?.slides" :key="idx" class="flex justify-center items-center">
@@ -20,6 +20,7 @@ const props = defineProps({
 const swiperOptions = ref(null);
 const swiper = useSwiper(swiperOptions, {
     loop: true,
+    spaceBetween: 50,
     pagination: { type: 'fraction' },
     navigation: true,
     autoHeight: true,

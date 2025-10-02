@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto relative flex flex-col items-center justify-center p-5">
+    <div class="container mx-auto relative flex flex-col items-center justify-center p-4">
         <h2 class="mb-4 text-xl font-mono font-light uppercase">{{ blok.description }}</h2>
         <div v-if="iframeSrc" class="w-full max-w-3xl aspect-video ">
             <iframe :src="iframeSrc" class="w-full h-full" frameborder="0"
