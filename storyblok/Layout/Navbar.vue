@@ -10,7 +10,7 @@
       </div>
       <div v-if="route.path === '/'" class="uppercase">
         <NuxtLink to="/about-me" class="text-sm cursor-pointer hover:underline">About me</NuxtLink>
-        <NuxtLink to="#contact" class="text-sm px-8 py-2 cursor-pointer hover:underline">Contact</NuxtLink>
+        <NuxtLink @click="scrollToContact" class="text-sm px-8 py-2 cursor-pointer hover:underline">Contact</NuxtLink>
       </div>
     </div>
   </nav>
@@ -31,6 +31,11 @@ const goBack = () => {
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+const scrollToContact = () => {
+  const section = document.querySelector('#contact')
+  if (section) { section.scrollIntoView({ behavior: 'smooth' }) }
 }
 
 const classes = computed(() =>
