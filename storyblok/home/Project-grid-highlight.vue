@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto px-4">
-    <div v-editable="blok" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-10">
+    <div v-editable="blok" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-4 md:pb-8 lg:pb-10">
       <StoryblokComponent v-for="blok in blok.columns" :key="blok._uid" :blok="blok" />
     </div>
     <div class="flex flex-row justify-center items-center gap-2">

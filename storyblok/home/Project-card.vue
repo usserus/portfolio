@@ -6,7 +6,10 @@
 
       <div class="animation">
         <img :src="blok.image.filename" :alt="blok.image.alt">
-        <div class="overlay"></div>
+        <div class="overlay" :class="{
+    'overlay--black': route.path === '/projects',
+    'overlay--white': route.path !== '/projects'
+  }"></div>
       </div>
 
       <hr class="h-px my-3 bg-gray-500 border-0">
@@ -24,10 +27,12 @@
 </template>
 
 <script setup>
+import { useRoute } from 'vue-router';
 
 defineProps({
   blok: Object
 });
+const route = useRoute();
 
 </script>
 
@@ -43,17 +48,32 @@ defineProps({
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: white;
   transform: translateY(100%);
   transition: transform 1s;
 }
 
-.overlay::before {
+.overlay--black {
+  @apply bg-black;
+}
+
+.overlay--white {
+  @apply bg-white;
+}
+
+.overlay--white::before {
   content: "show project";
   white-space: nowrap;
   position: absolute;
   right: 0;
   @apply font-mono font-light uppercase text-xs mt-2 text-black;
+}
+
+.overlay--black::before {
+  content: "show project";
+  white-space: nowrap;
+  position: absolute;
+  right: 0;
+  @apply font-mono font-light uppercase text-xs mt-2 text-white;
 }
 
 .animation:hover .overlay {
