@@ -1,5 +1,10 @@
 <template>
+
     <div v-editable="blok" class="container mx-auto px-4 w-full lg:w-3/5 py-6 sm:py-8 xl:py-10">
+        <span v-if="blok.heading"
+            class="container mx-auto flex justify-center font-mono font-normal uppercase text-3xl mb-6">
+            {{ blok?.heading }}
+        </span>
         <div>
             <swiper-container ref="swiperOptions" :init="false" class="w-full my-swiper">
                 <swiper-slide v-for="(slide, idx) in blok?.slides" :key="idx" class="flex justify-center items-center">
