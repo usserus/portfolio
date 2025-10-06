@@ -9,7 +9,7 @@
         </NuxtLink>
       </div>
       <div v-if="route.path === '/'" class="uppercase">
-        <NuxtLink to="/about-me" class="text-sm cursor-pointer hover:underline">About me</NuxtLink>
+        <NuxtLink to="/about-me" class="text-sm cursor-pointer hover:underline">About</NuxtLink>
         <NuxtLink @click="scrollToContact" class="text-sm px-8 py-2 cursor-pointer hover:underline">Contact</NuxtLink>
       </div>
     </div>
