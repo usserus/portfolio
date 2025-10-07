@@ -8,6 +8,12 @@
 
     <div v-html="articleContent" class="text-m mt-4"></div>
 
+    <a v-if="blok?.link?.url" class="mt-5 inline-block" :href="blok?.link?.url" target="_blank"
+      rel="noopener noreferrer">
+      <span class="border p-2 hover:bg-white hover:text-black">
+        {{ blok?.link?.url }}
+      </span>
+    </a>
   </div>
 </template>
 
