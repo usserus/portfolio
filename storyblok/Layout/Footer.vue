@@ -10,7 +10,7 @@
     </div>
 
     <div class="p-4 bg-black text-white text-sm">
-      © 2024 Copyright: <a href="/">Emil Düringer</a>
+      © 2025 Copyright: <a href="/">Emil Düringer</a>
     </div>
 
   </footer>
