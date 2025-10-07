@@ -1,7 +1,7 @@
 <template>
-    <div class="container mx-auto relative flex flex-col items-center justify-center p-4">
+    <div class="container mx-auto w-full lg:w-3/5 relative flex flex-col items-center justify-center p-4">
         <h2 class="mb-4 text-xl font-mono font-light uppercase">{{ blok.description }}</h2>
-        <div v-if="iframeSrc" class="w-full max-w-3xl aspect-video ">
+        <div v-if="iframeSrc" class="w-full aspect-video ">
             <iframe :src="iframeSrc" class="w-full h-full" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen loading="lazy"></iframe>
