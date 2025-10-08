@@ -1,7 +1,7 @@
 <template>
 
-  <div class="container mx-auto mb-12 px-4">
-    <div v-editable="blok" class="mt-32 lg:mt-44">
+  <div class="container mx-auto mb-12 px-4 pt-32 lg:pt-44">
+    <div v-editable="blok">
       <h2 class="text-base font-mono font-light uppercase">{{ blok.subheadline }}</h2>
       <hr class="h-px mt-2 mb-3 bg-gray-500 border-0  w-1/4">
       <h1
