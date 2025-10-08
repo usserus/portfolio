@@ -1,15 +1,11 @@
 <template>
-  <Navbar/>
-  <StoryblokComponent
-      v-if="story"
-      :blok="story.content"
-      :story-name="story.name"
-  />
-  <Footer/>
+  <Navbar />
+  <StoryblokComponent v-if="story" :blok="story.content" :story-name="story.name" />
+  <Footer />
 </template>
 
 <script setup>
-let {slug} = useRoute().params;
+let { slug } = useRoute().params;
 
 
 // Render "home" story on root url (/)
