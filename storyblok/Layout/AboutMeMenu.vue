@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-white text-xs shadow-2xl shadow-black z-50 flex flex-row">
+        class="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-white text-sm shadow-2xl shadow-black z-50 flex flex-row">
         <div v-for="(item, index) in menuItems" :key="index" @click="scrollToSection(index)"
             class="m-1 px-2 py-1 uppercase cursor-pointer transition-colors duration-300 ease-in-out"
             :class="activeIndex === index ? 'bg-black text-white' : 'bg-white text-black'">
