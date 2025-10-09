@@ -5,7 +5,7 @@
       class="group font-mono font-light uppercase">
 
       <div class="animation">
-        <img :src="blok.image.filename" :alt="blok.image.alt">
+        <img :src="blok.image.filename" :alt="blok.image.alt" class="w-full h-full">
         <div class="overlay" :class="{
     'overlay--black': route.path === '/projects',
     'overlay--white': route.path !== '/projects'
@@ -53,11 +53,11 @@ const route = useRoute();
 }
 
 .overlay--black {
-  @apply bg-black;
+  @apply bg-black text-white;
 }
 
 .overlay--white {
-  @apply bg-white;
+  @apply bg-white text-black;
 }
 
 .overlay--white::before {
@@ -65,15 +65,16 @@ const route = useRoute();
   white-space: nowrap;
   position: absolute;
   right: 0;
-  @apply font-mono font-light uppercase text-xs mt-2 text-black;
+  @apply font-mono font-light uppercase text-xs mt-2;
 }
 
-.overlay--black::before {
+.overlay--black::before,
+.overlay--black:active::before {
   content: "show project";
   white-space: nowrap;
   position: absolute;
   right: 0;
-  @apply font-mono font-light uppercase text-xs mt-2 text-white;
+  @apply font-mono font-light uppercase text-xs mt-2;
 }
 
 .animation:hover .overlay {
