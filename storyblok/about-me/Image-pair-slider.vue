@@ -6,7 +6,8 @@
             <div class="image-left-container col-span-2 overflow-hidden mb-4 sm:mb-0">
                 <swiper-container ref="leftSwiperOptions" :init="false" class="image-left">
                     <swiper-slide v-for="(slide, idx) in blok?.slider_left" :key="idx">
-                        <img :src="slide.image.filename" class=" w-full h-full object-cover grayscale contrast-[1.1]">
+                        <img :src="slide.image.filename" loading="lazy"
+                            class=" w-full h-full object-cover grayscale contrast-[1.1]">
                     </swiper-slide>
                 </swiper-container>
             </div>
@@ -17,7 +18,7 @@
                     <swiper-container ref="rightSwiperOptions" :init="false">
                         <swiper-slide v-for="(slide, idx) in blok?.slider_right" :key="idx"
                             class="flex flex-row items-end">
-                            <img :src="slide.image.filename"
+                            <img :src="slide.image.filename" loading="lazy"
                                 class="w-full h-full object-cover grayscale contrast-[1.1]">
                         </swiper-slide>
                     </swiper-container>

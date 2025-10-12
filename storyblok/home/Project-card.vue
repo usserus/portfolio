@@ -5,7 +5,7 @@
       class="group font-mono font-light uppercase">
 
       <div class="animation">
-        <img :src="blok.image.filename" :alt="blok.image.alt" class="w-full h-full">
+        <img :src="blok.image.filename" loading="lazy" class="w-full h-full">
         <div class="overlay" :class="{
     'overlay--black': route.path === '/projects',
     'overlay--white': route.path !== '/projects'

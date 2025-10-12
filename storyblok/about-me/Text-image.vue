@@ -3,7 +3,7 @@
         <div class="flex flex-col sm:flex-row gap-6">
 
             <div class="w-full sm:w-3/4 xl:w-1/4">
-                <img :src="blok.image.filename" :alt="blok.image.alt" class="object-cover grayscale contrast-[1.05]">
+                <img :src="blok.image.filename" loading="lazy" class="object-cover grayscale contrast-[1.05]">
             </div>
 
             <h1 class="xl:w-2/4 text-3xl md:text-5xl lg:text-7xl font-mono font-light">

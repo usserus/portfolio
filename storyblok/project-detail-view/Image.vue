@@ -1,6 +1,6 @@
 <template>
   <div v-editable="blok">
-    <img :src="blok.image.filename" class="w-full h-auto object-cover" />
+    <img :src="blok.image.filename" loading="lazy" class="w-full h-auto object-cover" />
   </div>
 </template>
 
