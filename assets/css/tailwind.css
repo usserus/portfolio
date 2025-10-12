@@ -33,3 +33,7 @@
 .drop-shadow-custom {
   filter: drop-shadow(0.25rem 0.25rem 1rem theme("colors.gray.700"));
 }
+
+ul {
+  @apply list-disc ml-4 mt-2;
+}
